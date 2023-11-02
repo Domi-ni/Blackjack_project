@@ -32,9 +32,9 @@ while want_to_play == "y":
   for number in range(2):
     player_cards.append(deal_cards())
     dealer_cards.append(deal_cards()) 
-    
+
   player_score = calculate_score(player_cards)
-  dealer_score = calculate_score(dealer_score)
+  dealer_score = calculate_score(dealer_cards)
 
   if dealer_score < 17:
     dealer_cards.append(deal_cards())
